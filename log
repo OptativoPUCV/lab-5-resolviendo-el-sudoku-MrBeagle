@@ -84,3 +84,15 @@ sudoku.c:140:5: error: implicit declaration of function 'freeList'; did you mean
       |     createList
 cc1.exe: all warnings being treated as errors
 f15e3a8
+Wed, May 14, 2025 11:36:09 PM: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+sudoku.c: In function 'DFS':
+sudoku.c:130:7: error: implicit declaration of function 'cleanList'; did you mean 'createList'? [-Werror=implicit-function-declaration]
+  130 |       cleanList(S);
+      |       ^~~~~~~~~
+      |       createList
+cc1.exe: all warnings being treated as errors
+5244293
