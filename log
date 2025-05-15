@@ -43,3 +43,28 @@ Tue, May 13, 2025  1:17:13 PM:
  tests:  7|1
 total_score: 55/70
 18a20d5
+Wed, May 14, 2025 11:31:49 PM: 
+ sudoku.c | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+Compilation failed
+In file included from test.c:5:
+sudoku.c: In function 'DFS':
+sudoku.c:123:14: error: implicit declaration of function 'createSactk'; did you mean 'createStack'? [-Werror=implicit-function-declaration]
+  123 |   Stack* S = createSactk();
+      |              ^~~~~~~~~~~
+      |              createStack
+sudoku.c:123:14: error: initialization of 'Stack *' {aka 'List *'} from 'int' makes pointer from integer without a cast [-Werror=int-conversion]
+sudoku.c:125:10: error: implicit declaration of function 'isEmpty'; did you mean 'is_empty'? [-Werror=implicit-function-declaration]
+  125 |   while(!isEmpty(S)){
+      |          ^~~~~~~
+      |          is_empty
+sudoku.c:130:7: error: implicit declaration of function 'freeStack'; did you mean 'createStack'? [-Werror=implicit-function-declaration]
+  130 |       freeStack(S);
+      |       ^~~~~~~~~
+      |       createStack
+sudoku.c:140:5: error: implicit declaration of function 'freeList'; did you mean 'createList'? [-Werror=implicit-function-declaration]
+  140 |     freeList(adj);
+      |     ^~~~~~~~
+      |     createList
+cc1.exe: all warnings being treated as errors
+52acf95

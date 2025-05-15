@@ -120,6 +120,25 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
+  Stack* S = createSactk();
+  push(S, initial);
+  while(!isEmpty(S)){
+    Node* current = top(S);
+    pop(S);
+    (*cont)++;
+    if(is_final(current)){
+      freeStack(S);
+      return current;
+    }
+    List* adj = get_adj_nodes(current);
+    Node* adjNode = first(adj);
+    while(adjNode != NULL){
+      push(S, adjNode);
+      adjNode = next(adj);
+    }
+    free(current);
+    freeList(adj);
+  }
   return NULL;
 }
 
