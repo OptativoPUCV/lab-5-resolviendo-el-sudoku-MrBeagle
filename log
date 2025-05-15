@@ -96,3 +96,9 @@ sudoku.c:130:7: error: implicit declaration of function 'cleanList'; did you mea
       |       createList
 cc1.exe: all warnings being treated as errors
 5244293
+Wed, May 14, 2025 11:39:38 PM: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  10|0
+total_score: 70/70
+ed02590
